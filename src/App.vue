@@ -1,11 +1,16 @@
 <template>
-    <div></div>
+    <div class="page">
+        <PriceLeasing></PriceLeasing>
+    </div>
 </template>
 
 <script>
-export default {}
+import PriceLeasing from './components/PriceLeasing/PriceLeasing.vue'
+export default {
+    components: { PriceLeasing },
+}
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import 'styles/main';
 </style>

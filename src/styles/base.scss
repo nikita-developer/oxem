@@ -2,6 +2,21 @@
 @import 'primevue/resources/primevue.min.css';
 @import 'primeicons/primeicons.css';
 
+@font-face {
+    font-family: 'Gilroy';
+    src: url('@/assets/fonts/Gilroy/Gilroy-Regular.woff2') format('woff2'),
+        url('@/assets/fonts/Gilroy/Gilroy-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Nekst-Black';
+    src: url('@/assets/fonts/Nekst-Black/Nekst-Black.woff2') format('woff2'),
+        url('@/assets/fonts/Nekst-Black/Nekst-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -9,20 +24,12 @@
 }
 
 body {
-    font-family: var(--font-family);
+    font-family: 'Gilroy', sans-serif;
     font-size: 16px;
     line-height: 1.2;
-    color: var(--text-color);
 }
 
 .page {
     min-height: 100vh;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-}
-
-.logo {
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 20px;
+    padding: 15px;
 }
