@@ -5,12 +5,32 @@
         border-bottom-left-radius: 16px !important;
         padding-left: 24px !important;
         padding-right: 24px !important;
-        border: 0 !important;
+        border-right: 0 !important;
+        border-top: 2px solid transparent !important;
+        border-bottom: 2px solid transparent !important;
+        border-left: 2px solid transparent !important;
         height: 68px !important;
         font-family: 'Nekst-Black' !important;
         font-weight: 900 !important;
         font-size: 30px !important;
         color: #575757 !important;
+        transition: none !important;
+
+        &:focus {
+            background-color: #fff !important;
+            box-shadow: none !important;
+            outline: 0 !important;
+            border-top: 2px solid #f3f3f4 !important;
+            border-bottom: 2px solid #f3f3f4 !important;
+            border-left: 2px solid #f3f3f4 !important;
+
+            & + .calculator-field__info {
+                background-color: #fff !important;
+                border-top: 2px solid #f3f3f4 !important;
+                border-right: 2px solid #f3f3f4 !important;
+                border-bottom: 2px solid #f3f3f4 !important;
+            }
+        }
 
         @media (max-width: 480px) {
             height: 60px !important;
@@ -27,6 +47,9 @@
         font-weight: 900 !important;
         font-size: 30px !important;
         padding-right: 24px !important;
+        border-top: 2px solid transparent !important;
+        border-right: 2px solid transparent !important;
+        border-bottom: 2px solid transparent !important;
 
         @media (max-width: 480px) {
             font-size: 22px !important;
@@ -58,6 +81,8 @@
     }
 
     &__range {
+        position: relative;
+        z-index: 1;
         height: 2px !important;
         background-color: #fff;
         margin-left: 24px;
