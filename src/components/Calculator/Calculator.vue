@@ -47,11 +47,11 @@
                     <Slider class="calculator-field__range" />
                 </div>
             </div>
-            <div class="calculator__item">
+            <div class="calculator__item calculator__item--five-percent">
                 <p class="calculator__name">Сумма договора лизинга</p>
                 <div class="calculator__result">4 467 313 ₽</div>
             </div>
-            <div class="calculator__item">
+            <div class="calculator__item calculator__item--five-percent">
                 <p class="calculator__name">Ежемесячный платеж от</p>
                 <div class="calculator__result">4 467 313 ₽</div>
             </div>

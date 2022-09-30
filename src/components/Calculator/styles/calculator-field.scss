@@ -11,6 +11,11 @@
         font-weight: 900 !important;
         font-size: 30px !important;
         color: #575757 !important;
+
+        @media (max-width: 480px) {
+            height: 60px !important;
+            font-size: 22px !important;
+        }
     }
 
     &__info {
@@ -21,13 +26,19 @@
         font-family: 'Nekst-Black' !important;
         font-weight: 900 !important;
         font-size: 30px !important;
+        padding-right: 24px !important;
+
+        @media (max-width: 480px) {
+            font-size: 22px !important;
+        }
 
         &--percent {
-            font-family: 'Nekst-Black';
-            font-weight: 900;
-            font-size: 20px;
-            padding-top: 0;
-            padding-bottom: 0;
+            font-family: 'Nekst-Black' !important;
+            font-weight: 900 !important;
+            font-size: 20px !important;
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+            padding-right: 0.5rem !important;
 
             & span {
                 display: flex;
@@ -37,6 +48,11 @@
                 height: 54px;
                 background-color: #ebebec;
                 border-radius: 16px;
+
+                @media (max-width: 480px) {
+                    width: 67px;
+                    height: 48px;
+                }
             }
         }
     }
