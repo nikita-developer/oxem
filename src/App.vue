@@ -1,6 +1,6 @@
 <template>
     <div class="page">
-        <PriceLeasing></PriceLeasing>
+        <PriceLeasing class="page__calculator"></PriceLeasing>
     </div>
 </template>
 
