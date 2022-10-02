@@ -10,8 +10,13 @@
     &__row {
         &--btns {
             display: flex;
-            justify-content: space-between;
+            flex-wrap: wrap;
             margin-bottom: 60px;
         }
+    }
+
+    &__btn {
+        margin: 1rem;
+        flex-grow: 0 0 auto;
     }
 }
