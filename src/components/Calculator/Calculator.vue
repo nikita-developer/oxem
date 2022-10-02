@@ -152,7 +152,7 @@ export default {
                             console.log(response.data, 'success')
                             this.btnIsActive = false
                         })
-                        .catch(function (error) {
+                        .catch((error) => {
                             console.log(error.response, 'error')
                             this.btnIsActive = false
                         })
