@@ -1,40 +1,42 @@
 .calculator-field {
     &__input {
-        background-color: #f3f3f4 !important;
-        border-top-left-radius: 16px !important;
-        border-bottom-left-radius: 16px !important;
-        padding-left: 24px !important;
-        padding-right: 24px !important;
-        border-right: 0 !important;
-        border-top: 2px solid transparent !important;
-        border-bottom: 2px solid transparent !important;
-        border-left: 2px solid transparent !important;
-        height: 68px !important;
-        font-family: 'Nekst-Black' !important;
-        font-weight: 900 !important;
-        font-size: 30px !important;
-        color: #575757 !important;
-        transition: none !important;
+        & input {
+            background-color: #f3f3f4 !important;
+            border-top-left-radius: 16px !important;
+            border-bottom-left-radius: 16px !important;
+            padding-left: 24px !important;
+            padding-right: 24px !important;
+            border-right: 0 !important;
+            border-top: 2px solid transparent !important;
+            border-bottom: 2px solid transparent !important;
+            border-left: 2px solid transparent !important;
+            height: 68px !important;
+            font-family: 'Nekst-Black' !important;
+            font-weight: 900 !important;
+            font-size: 30px !important;
+            color: #575757 !important;
+            transition: none !important;
 
-        &:focus {
-            background-color: #fff !important;
-            box-shadow: none !important;
-            outline: 0 !important;
-            border-top: 2px solid #f3f3f4 !important;
-            border-bottom: 2px solid #f3f3f4 !important;
-            border-left: 2px solid #f3f3f4 !important;
-
-            & + .calculator-field__info {
+            &:focus {
                 background-color: #fff !important;
+                box-shadow: none !important;
+                outline: 0 !important;
                 border-top: 2px solid #f3f3f4 !important;
-                border-right: 2px solid #f3f3f4 !important;
                 border-bottom: 2px solid #f3f3f4 !important;
-            }
-        }
+                border-left: 2px solid #f3f3f4 !important;
 
-        @media (max-width: 480px) {
-            height: 60px !important;
-            font-size: 22px !important;
+                & + .calculator-field__info {
+                    background-color: #fff !important;
+                    border-top: 2px solid #f3f3f4 !important;
+                    border-right: 2px solid #f3f3f4 !important;
+                    border-bottom: 2px solid #f3f3f4 !important;
+                }
+            }
+
+            @media (max-width: 480px) {
+                height: 60px !important;
+                font-size: 22px !important;
+            }
         }
     }
 

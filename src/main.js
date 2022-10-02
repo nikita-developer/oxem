@@ -3,11 +3,11 @@ import App from './App.vue'
 
 import PrimeVue from 'primevue/config'
 import Slider from 'primevue/slider'
-import InputText from 'primevue/inputtext'
+import InputNumber from 'primevue/inputnumber'
 
 const app = createApp(App)
 
 app.use(PrimeVue)
     .component('Slider', Slider)
-    .component('InputText', InputText)
+    .component('InputNumber', InputNumber)
     .mount('#app')
