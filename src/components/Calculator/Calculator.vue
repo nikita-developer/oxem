@@ -140,20 +140,25 @@ export default {
             if (!this.btnIsActive) {
                 this.btnIsActive = true
                 setTimeout(() => {
-                    axios
-                        .post('https://eoj3r7f3r4ef6v4.m.pipedream.net', {
+                    fetch('https://eoj3r7f3r4ef6v4.m.pipedream.net', {
+                        method: 'post',
+                        body: JSON.stringify({
                             priceAuto: this.priceAuto,
                             priceFirst: this.priceFirst,
                             mont: this.mont,
                             summaLeasing: this.summaLeasing,
                             montPrice: this.montPrice,
-                        })
+                        }),
+                        headers: {
+                            'content-type': 'application/json',
+                        },
+                    })
                         .then((response) => {
-                            console.log(response.data, 'success')
+                            alert('Пасиба, мы получили ваш запрос =)')
                             this.btnIsActive = false
                         })
                         .catch((error) => {
-                            console.log(error.response, 'error')
+                            alert('Что-то пошло не так =(')
                             this.btnIsActive = false
                         })
                 }, 2000)
