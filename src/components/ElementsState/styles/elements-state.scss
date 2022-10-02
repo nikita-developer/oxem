@@ -1,0 +1,17 @@
+.elements-state {
+    &__title {
+        font-family: 'Nekst-Black';
+        font-weight: 900;
+        font-size: 30px;
+        color: #575757;
+        margin-bottom: 50px;
+    }
+
+    &__row {
+        &--btns {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 60px;
+        }
+    }
+}

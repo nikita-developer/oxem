@@ -6,13 +6,15 @@
             </h1>
             <Calculator class="price-leasing__calculator"></Calculator>
         </div>
+        <ElementsState class="price-leasing__elements-state" />
     </div>
 </template>
 
 <script>
 import Calculator from '../Calculator/Calculator.vue'
+import ElementsState from '../ElementsState/ElementsState.vue'
 export default {
-    components: { Calculator },
+    components: { Calculator, ElementsState },
 }
 </script>
 

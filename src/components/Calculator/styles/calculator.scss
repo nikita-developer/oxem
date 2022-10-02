@@ -61,37 +61,10 @@
     }
 
     &__btn {
-        width: 100%;
-        padding: 16px;
-        border: 0;
-        background-color: #ff9514;
-        border-radius: 40px;
-        font-family: 'Nekst-Black';
-        font-weight: 900;
-        font-size: 30px;
-        color: #fff;
-        cursor: pointer;
-
-        &:hover {
-            background-color: #111111;
-            color: #fff;
-        }
-
-        &:active {
-            background-color: #575757;
-        }
-
-        &:disabled {
-            background-color: rgba(255, 149, 20, 0.4);
-            cursor: default;
-        }
-
-        @media (max-width: 1024px) {
-            max-width: 345px;
-        }
-
-        @media (max-width: 480px) {
-            font-size: 22px !important;
+        &.btn {
+            width: 100%;
+            padding: 16px;
+            font-size: 30px;
         }
     }
 }

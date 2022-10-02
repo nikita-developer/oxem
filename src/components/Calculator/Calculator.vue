@@ -84,7 +84,7 @@
                 <div class="calculator__result">{{ montPrice }} ₽</div>
             </div>
             <div class="calculator__item">
-                <button class="calculator__btn" :disabled="btnIsActive">
+                <button class="calculator__btn btn" :disabled="btnIsActive">
                     Оставить заявку
                 </button>
             </div>
